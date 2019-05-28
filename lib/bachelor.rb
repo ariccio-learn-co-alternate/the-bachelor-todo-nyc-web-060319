@@ -45,7 +45,7 @@ def get_average_age_for_season(data, season)
   data[season].each do |contestant|
     total += contestant["age"].to_i
   end
-  #binding.pry
+  binding.pry
   (total/ (data[season].length() -1) )
 end
 
