@@ -1,5 +1,9 @@
+require "pry"
 def get_first_name_of_season_winner(data, season)
   # code here
+  season_won_data = data[season]
+  winner_index = season_won_data.find_index( |contestant| contestant["status"] == "winner")
+  binding.pry
 end
 
 def get_contestant_name(data, occupation)
