@@ -37,6 +37,7 @@ def get_occupation(data, hometown)
       return season_data[contestant_index]["occupation"]
     end
   end
+  nil
 end
 
 def get_average_age_for_season(data, season)
