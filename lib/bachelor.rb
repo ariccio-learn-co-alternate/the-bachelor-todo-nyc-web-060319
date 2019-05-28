@@ -10,7 +10,10 @@ end
 
 def get_contestant_name(data, occupation)
   data.each do |season, season_data|
-    binding.pry
+    contestant_index = season_data.find_index{ |contestant| contestant["occupation"] == occupation }
+    if contestant_index != nil
+      return season_data[contestant_index]["name"]
+    end
   end
 end
 
